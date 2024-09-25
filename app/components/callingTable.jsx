@@ -19,7 +19,6 @@ const CallingTable = () => {
         </tr>
         </thead>
         <tbody>
-
         </tbody>
 
      </table>
