@@ -1,4 +1,5 @@
 import result from '@/models/result';
+import ConnectDb from '@/utils/ConnectDb';
 import React from 'react'
 
 const Insert = () => {
@@ -17,11 +18,10 @@ const Insert = () => {
     let science = formData.get("science");
     let socialScience = formData.get("socialScience");
 
-    DbConnect();
+    ConnectDb();
 
     let newdata = await result.create({name:name,fatherName:fatherName,motherName:motherName,schoolName:schoolName,
-      address:address,english:english,hindi:hindi,maths:maths,science:science,socialScience:socialScience,
-    })
+      address:address,english:english,hindi:hindi,maths:maths,science:science,socialScience:socialScience})
 
     redirect("/");
 }
