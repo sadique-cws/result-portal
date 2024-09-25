@@ -34,8 +34,6 @@ const CallingTable = () => {
         </tr>
         </thead>
         <tbody>
-<<<<<<< HEAD
-=======
           <tr>
             <th className='border p-3'>1</th>
             <th className="border p-3" scope='row'> English</th>
@@ -75,10 +73,7 @@ const CallingTable = () => {
             <td className="border p-3"></td>
             <td className="border p-3 text-gray-500">Very Good</td>
           </tr>
-
->>>>>>> a50a701f49dd569dddffa445f6e1f87538482933
         </tbody>
-
      </table>
     
     </div>
