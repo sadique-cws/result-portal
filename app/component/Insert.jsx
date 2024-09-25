@@ -2,54 +2,69 @@ import React from 'react'
 
 const Insert = () => {
   return (
-    <form action="" className='flex flex-1 p-2  bg-slate-500  font-bold  items-start flex-col'>
-      <div className='flex flex-col gap-2 items-center justify-between'>
-        <div className='flex  mb-3  gap-4'>
-          <label htmlFor="name">Name :-</label>
-          <input type="text" id='name' />
-        </div>
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="fatherName">Father's Name :-</label>
-          <input type="text" id='fatherName' />
-        </div>
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="motherName">Mother's Name :-</label>
-          <input type="text" id='motherName' />
-        </div>
-
-        <div className='flex mb-3 gap-4 '>
-          <label htmlFor="schoolName">School's Name :-</label>
-          <input type="text" id='fatherName' />
+    <form action="" className='flex flex-1 px-5 py-6 bg-white font-serif'>
+      <div className='flex flex-col gap-7'>
+        <h1 className='flex font-bold text-indigo-600 text-3xl justify-center'>Student's Details</h1>
+        <div className='flex gap-4 justify-evenly'>
+          <div className='flex flex-col'>
+            <label htmlFor="name" className='font-bold'>Name</label>
+            <input type="text" id='name' placeholder='Enter Your Name' className='outline-none h-10 placeholder:text-sm border-2 border-gray-300 px-1 rounded-md' />
+          </div>
+          <div className='flex flex-col'>
+            <label htmlFor="fatherName" className='font-bold'>Father's Name</label>
+            <input type="text" id='fatherName' placeholder='Enter Your FathersName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+          </div>
         </div>
 
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="address">Address :-</label>
-          <input type="text" id='address' />
-        </div>
-        <div className='flex mb-3 gap-4  '>
-          <label htmlFor="english">English :-</label>
-          <input type="number" id='english' />
-        </div>
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="hindi">Hindi :-</label>
-          <input type="number" id='hindi' />
-        </div>
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="maths">Maths :-</label>
-          <input type="number" id='maths' />
-        </div>
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="science">Science</label>
-          <input type="number" id='science' />
-        </div>
-        <div className='flex mb-3 gap-4'>
-          <label htmlFor="socialScience">Social Science</label>
-          <input type="number" id='socialScience' />
+        <div className='flex gap-4 justify-evenly'>
+          <div className='flex flex-col'>
+            <label htmlFor="motherName" className='font-bold'>Mother's Name</label>
+            <input type="text" id='motherName' placeholder='Enter Your MothersName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+          </div>
+
+          <div className='flex flex-col'>
+            <label htmlFor="schoolName" className='font-bold'>School's Name</label>
+            <input type="text" id='fatherName' placeholder='Enter Your SchoolName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+          </div>
         </div>
 
-        <div className=' mb-3'>
-          <button className='flex cursor-pointer bg-green-500 p-2 px-4 rounded-full font-bold'>Submit</button>
+        <div className='flex px-9'>
+          <div className='flex flex-col'>
+            <label htmlFor="address" className='font-bold'>Address</label>
+            <input type="text" id='address' placeholder='Enter Your Address' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+          </div>
         </div>
+
+        <div className='flex flex-col gap-4'>
+          <h2 className='flex font-bold text-3xl justify-center text-indigo-600'>Mark's Of Students</h2>
+          <div className='flex gap-4'>
+            <div className='flex flex-col'>
+              <label htmlFor="english" className='font-bold'>English</label>
+              <input type="number" id='english' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="hindi" className='font-bold'>Hindi</label>
+              <input type="number" id='hindi' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="maths" className='font-bold'>Maths</label>
+              <input type="number" id='maths' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="science" className='font-bold'>Science</label>
+              <input type="number" id='science' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="socialScience" className='font-bold'>Social Science</label>
+              <input type="number" id='socialScience' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+          </div>
+        </div>
+
+        <div className='flex'>
+          <button className='flex flex-1 justify-center cursor-pointer bg-indigo-500 text-white py-1 text-2xl rounded-full font-bold'>Submit</button>
+        </div>
+
       </div>
     </form>
   )
