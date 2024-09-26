@@ -1,4 +1,4 @@
-import result from '@/models/Result';
+import Result from '@/models/Result';
 import ConnectDb from '@/utils/ConnectDb';
 import { redirect } from 'next/navigation';
 import React from 'react'
@@ -21,7 +21,7 @@ const Insert = () => {
 
     ConnectDb();
 
-    let newdata = await result.create({name:name,fatherName:fatherName,motherName:motherName,schoolName:schoolName,
+    let newdata = await Result.create({name:name,fatherName:fatherName,motherName:motherName,schoolName:schoolName,
       address:address,english:english,hindi:hindi,maths:maths,science:science,socialScience:socialScience,
     })
 
