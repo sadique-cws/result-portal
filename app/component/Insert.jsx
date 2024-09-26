@@ -22,8 +22,11 @@ const Insert = () => {
     ConnectDb();
 
     let newdata = await Result.create({name:name,fatherName:fatherName,motherName:motherName,schoolName:schoolName,
+
       address:address,english:english,hindi:hindi,maths:maths,science:science,socialScience:socialScience,
     })
+
+      
 
     redirect("/");
 }
@@ -36,30 +39,50 @@ const Insert = () => {
         <div className='flex gap-4 justify-evenly'>
           <div className='flex flex-col'>
             <label htmlFor="name" className='font-bold'>Name</label>
+
             <input type="text" id='name' name='name' placeholder='Enter Your Name' className='outline-none h-10 placeholder:text-sm border-2 border-gray-300 px-1 rounded-md' />
           </div>
           <div className='flex flex-col'>
             <label htmlFor="fatherName" className='font-bold'>Father's Name</label>
             <input type="text" id='fatherName' name='fatherName' placeholder='Enter Your FathersName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
+            <input type="text" id='name'   name='name'  placeholder='Enter Your Name' className='outline-none h-10 placeholder:text-sm border-2 border-gray-300 px-1 rounded-md' />
+          </div>
+          <div className='flex flex-col'>
+            <label htmlFor="fatherName" className='font-bold'>Father's Name</label>
+            <input type="text" id='fatherName'  name='fatherName'  placeholder='Enter Your FathersName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
           </div>
         </div>
 
         <div className='flex gap-4 justify-evenly'>
           <div className='flex flex-col'>
             <label htmlFor="motherName" className='font-bold'>Mother's Name</label>
+
             <input type="text" id='motherName' name='motherName' placeholder='Enter Your MothersName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
+            <input type="text" id='motherName'  name='motherName'  placeholder='Enter Your MothersName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
           </div>
 
           <div className='flex flex-col'>
             <label htmlFor="schoolName" className='font-bold'>School's Name</label>
+
             <input type="text" id='schoolName' name='schoolName' placeholder='Enter Your SchoolName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
+            <input type="text" id='schoolName'  name='schoolName'  placeholder='Enter Your SchoolName' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
           </div>
         </div>
 
         <div className='flex px-9'>
           <div className='flex flex-col'>
             <label htmlFor="address" className='font-bold'>Address</label>
+
             <input type="text" id='address' name='address' placeholder='Enter Your Address' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
+            <input type="text" id='address'  name='address'  placeholder='Enter Your Address' className='h-10 placeholder:text-sm outline-none border-2 border-gray-300 px-1 rounded-md' />
+
           </div>
         </div>
 
@@ -68,6 +91,7 @@ const Insert = () => {
           <div className='flex gap-4'>
             <div className='flex flex-col'>
               <label htmlFor="english" className='font-bold'>English</label>
+
               <input type="number" id='english' name='english' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
             </div>
             <div className='flex flex-col'>
@@ -85,6 +109,25 @@ const Insert = () => {
             <div className='flex flex-col'>
               <label htmlFor="socialScience" className='font-bold'>Social Science</label>
               <input type="number" id='socialScience' name='socialScience' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+
+              <input type="number" id='english'  name='english'  className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="hindi" className='font-bold'>Hindi</label>
+              <input type="number" id='hindi'  name='hindi'  className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="maths" className='font-bold'>Maths</label>
+              <input type="number" id='maths'   name='maths' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="science" className='font-bold'>Science</label>
+              <input type="number" id='science'  name='science'  className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+            </div>
+            <div className='flex flex-col'>
+              <label htmlFor="socialScience" className='font-bold'>Social Science</label>
+              <input type="number" id='socialScience'   name='socialScience' className='outline-none border-2 w-20 border-gray-300 px-1 rounded-md' />
+
             </div>
           </div>
         </div>
