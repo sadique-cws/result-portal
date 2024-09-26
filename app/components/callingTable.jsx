@@ -37,8 +37,8 @@ const CallingTable = async () => {
                   <h1>Term:<span className='text-gray-500 ml-2'> First</span></h1>
                 </div>
                 <div className='flex flex-1 justify-between'>
-                  <h1> Father's Name:<span className='text-gray-500 ml-2'> {record.motherName}</span> </h1>
-                  <h1>Term:<span className='text-gray-500 ml-2'> First</span></h1>
+                  <h1> Mother's Name:<span className='text-gray-500 ml-2'> {record.motherName}</span> </h1>
+                  <h1>Class:<span className='text-gray-500 ml-2'> 10th</span></h1>
                 </div>
                 <div className='flex flex-1 justify-between'>
                   <h1> School name:<span className='text-gray-500 ml-2'> {record.schoolName}</span> </h1>
