@@ -3,8 +3,10 @@ import Insert from '../component/Insert'
 
 const page = () => {
   return (
-    <div className='flex w-4/12 p-4'>
-        <Insert/>
+    <div className='flex h-screen px-12 py-6 bg-indigo-100'>
+      <div>
+        <Insert />
+      </div>
     </div>
   )
 }
